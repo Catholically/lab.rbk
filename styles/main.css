@@ -228,6 +228,40 @@ a {
     align-items: center;
     padding-top: 100px;
     background: linear-gradient(180deg, var(--color-cream) 0%, var(--color-off-white) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: calc(-50% + var(--parallax-y, 0px));
+    right: -20%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(184, 163, 105, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: top 0.1s ease-out;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: calc(-30% - var(--parallax-y, 0px));
+    left: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(184, 163, 105, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: bottom 0.1s ease-out;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    will-change: transform, opacity;
 }
 
 .hero-eyebrow {
