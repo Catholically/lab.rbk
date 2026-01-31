@@ -911,7 +911,7 @@ a {
    ======================================== */
 
 .footer {
-    padding: var(--spacing-lg) 0;
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
     background-color: var(--color-black);
     text-align: center;
 }
