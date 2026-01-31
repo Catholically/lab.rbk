@@ -1,7 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <rect width="32" height="32" fill="#0a0a0a"/>
-  <!-- RBK stylized bars -->
-  <rect x="8" y="8" width="3" height="16" fill="#b8a369"/>
-  <rect x="14" y="8" width="3" height="16" fill="#b8a369" opacity="0.7"/>
-  <rect x="20" y="8" width="3" height="16" fill="#b8a369" opacity="0.4"/>
+  <text x="16" y="22" font-family="Georgia, serif" font-size="18" font-weight="400" fill="#b8a369" text-anchor="middle">R</text>
 </svg>
