@@ -188,11 +188,13 @@ a {
 }
 
 .nav-logo {
-    font-family: var(--font-sans);
-    font-weight: 500;
-    font-size: 1.25rem;
-    letter-spacing: 0.05em;
-    color: var(--color-black);
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 32px;
+    width: auto;
 }
 
 .nav-logo-accent {
@@ -463,6 +465,18 @@ a {
 
 .ai-text p:last-child {
     margin-bottom: 0;
+}
+
+.hero-logo {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 200px;
+    }
 }
 
 .hero-eyebrow {
