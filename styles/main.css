@@ -976,6 +976,14 @@ a {
 }
 
 @media (max-width: 768px) {
+    .nav-container {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+
+    .nav-logo-img {
+        height: 48px;
+    }
+
     .nav-links {
         display: none;
     }
