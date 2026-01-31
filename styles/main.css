@@ -404,16 +404,16 @@ a {
     100% { transform: translateX(100%); }
 }
 
-/* Neural Network SVG */
+/* Plexus Network SVG */
 .neural-network {
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 3%;
     transform: translateY(-50%);
-    width: 350px;
-    height: 450px;
+    width: 420px;
+    height: 500px;
     pointer-events: none;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 
 .neural-network .node {
