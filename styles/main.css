@@ -652,18 +652,66 @@ a {
     pointer-events: none;
 }
 
-/* Floating accent element */
+/* Geometric floating elements - multiple shapes */
 #approach::after {
     content: '';
     position: absolute;
-    top: 15%;
-    right: 8%;
-    width: 200px;
-    height: 200px;
-    border: 1px solid rgba(184, 163, 105, 0.25);
-    border-radius: 50%;
-    animation: float-slow 20s ease-in-out infinite;
+    top: 10%;
+    right: 12%;
+    width: 80px;
+    height: 80px;
+    border: 1px solid rgba(184, 163, 105, 0.2);
+    transform: rotate(45deg);
+    animation: float-rotate 25s ease-in-out infinite;
     pointer-events: none;
+}
+
+/* Additional geometric shapes */
+.approach-shape-1,
+.approach-shape-2,
+.approach-shape-3 {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.approach-shape-1 {
+    top: 25%;
+    right: 18%;
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184, 163, 105, 0.3), transparent);
+    transform: rotate(-30deg);
+    animation: line-fade 8s ease-in-out infinite;
+}
+
+.approach-shape-2 {
+    bottom: 30%;
+    right: 8%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(184, 163, 105, 0.15);
+    animation: float-rotate 18s ease-in-out infinite reverse;
+}
+
+.approach-shape-3 {
+    top: 60%;
+    right: 22%;
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid rgba(184, 163, 105, 0.25);
+    border-bottom: 1px solid rgba(184, 163, 105, 0.25);
+    animation: float 15s ease-in-out infinite;
+}
+
+@keyframes float-rotate {
+    0%, 100% { transform: rotate(45deg) translateY(0); opacity: 0.8; }
+    50% { transform: rotate(45deg) translateY(-15px); opacity: 1; }
+}
+
+@keyframes line-fade {
+    0%, 100% { opacity: 0.3; transform: rotate(-30deg) scaleX(0.8); }
+    50% { opacity: 0.8; transform: rotate(-30deg) scaleX(1.2); }
 }
 
 .approach-list {
@@ -859,7 +907,7 @@ a {
     text-align: center;
     max-width: 500px;
     margin: 0 auto;
-    padding-top: var(--spacing-lg);
+    padding-top: var(--spacing-2xl);
     position: relative;
     z-index: 1;
 }
