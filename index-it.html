@@ -21,7 +21,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/main.css?v=4">
+    <link rel="stylesheet" href="styles/main.css?v=5">
 </head>
 <body>
     <!-- Navigation -->
@@ -68,6 +68,59 @@
                 </div>
             </div>
         </div>
+        <!-- Neural Network SVG -->
+        <svg class="neural-network" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Connections Layer 1 to Layer 2 -->
+            <line x1="80" y1="80" x2="200" y2="50" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+            <line x1="80" y1="80" x2="200" y2="130" stroke="rgba(184,163,105,0.25)" stroke-width="1"/>
+            <line x1="80" y1="80" x2="200" y2="210" stroke="rgba(184,163,105,0.15)" stroke-width="1"/>
+            <line x1="80" y1="170" x2="200" y2="50" stroke="rgba(184,163,105,0.2)" stroke-width="1"/>
+            <line x1="80" y1="170" x2="200" y2="130" stroke="rgba(184,163,105,0.35)" stroke-width="1"/>
+            <line x1="80" y1="170" x2="200" y2="210" stroke="rgba(184,163,105,0.25)" stroke-width="1"/>
+            <line x1="80" y1="260" x2="200" y2="130" stroke="rgba(184,163,105,0.2)" stroke-width="1"/>
+            <line x1="80" y1="260" x2="200" y2="210" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+            <line x1="80" y1="260" x2="200" y2="290" stroke="rgba(184,163,105,0.25)" stroke-width="1"/>
+            <line x1="80" y1="350" x2="200" y2="210" stroke="rgba(184,163,105,0.15)" stroke-width="1"/>
+            <line x1="80" y1="350" x2="200" y2="290" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+            <line x1="80" y1="350" x2="200" y2="370" stroke="rgba(184,163,105,0.35)" stroke-width="1"/>
+            <line x1="80" y1="440" x2="200" y2="290" stroke="rgba(184,163,105,0.2)" stroke-width="1"/>
+            <line x1="80" y1="440" x2="200" y2="370" stroke="rgba(184,163,105,0.25)" stroke-width="1"/>
+            <line x1="80" y1="440" x2="200" y2="450" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+
+            <!-- Connections Layer 2 to Layer 3 -->
+            <line x1="200" y1="50" x2="320" y2="120" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+            <line x1="200" y1="50" x2="320" y2="250" stroke="rgba(184,163,105,0.15)" stroke-width="1"/>
+            <line x1="200" y1="130" x2="320" y2="120" stroke="rgba(184,163,105,0.35)" stroke-width="1"/>
+            <line x1="200" y1="130" x2="320" y2="250" stroke="rgba(184,163,105,0.25)" stroke-width="1"/>
+            <line x1="200" y1="210" x2="320" y2="120" stroke="rgba(184,163,105,0.2)" stroke-width="1"/>
+            <line x1="200" y1="210" x2="320" y2="250" stroke="rgba(184,163,105,0.4)" stroke-width="1"/>
+            <line x1="200" y1="210" x2="320" y2="380" stroke="rgba(184,163,105,0.2)" stroke-width="1"/>
+            <line x1="200" y1="290" x2="320" y2="250" stroke="rgba(184,163,105,0.35)" stroke-width="1"/>
+            <line x1="200" y1="290" x2="320" y2="380" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+            <line x1="200" y1="370" x2="320" y2="250" stroke="rgba(184,163,105,0.15)" stroke-width="1"/>
+            <line x1="200" y1="370" x2="320" y2="380" stroke="rgba(184,163,105,0.35)" stroke-width="1"/>
+            <line x1="200" y1="450" x2="320" y2="380" stroke="rgba(184,163,105,0.3)" stroke-width="1"/>
+
+            <!-- Layer 1 Nodes (Input) -->
+            <circle cx="80" cy="80" r="8" fill="rgba(184,163,105,0.6)" class="node node-pulse"/>
+            <circle cx="80" cy="170" r="8" fill="rgba(184,163,105,0.8)" class="node"/>
+            <circle cx="80" cy="260" r="8" fill="rgba(184,163,105,0.5)" class="node node-pulse-delay"/>
+            <circle cx="80" cy="350" r="8" fill="rgba(184,163,105,0.7)" class="node"/>
+            <circle cx="80" cy="440" r="8" fill="rgba(184,163,105,0.6)" class="node node-pulse"/>
+
+            <!-- Layer 2 Nodes (Hidden) -->
+            <circle cx="200" cy="50" r="10" fill="rgba(184,163,105,0.5)" class="node node-pulse-delay"/>
+            <circle cx="200" cy="130" r="10" fill="rgba(184,163,105,0.9)" class="node"/>
+            <circle cx="200" cy="210" r="10" fill="rgba(184,163,105,0.7)" class="node node-pulse"/>
+            <circle cx="200" cy="290" r="10" fill="rgba(184,163,105,0.6)" class="node"/>
+            <circle cx="200" cy="370" r="10" fill="rgba(184,163,105,0.8)" class="node node-pulse-delay"/>
+            <circle cx="200" cy="450" r="10" fill="rgba(184,163,105,0.5)" class="node"/>
+
+            <!-- Layer 3 Nodes (Output) -->
+            <circle cx="320" cy="120" r="12" fill="rgba(184,163,105,0.7)" class="node node-pulse"/>
+            <circle cx="320" cy="250" r="12" fill="rgba(184,163,105,1)" class="node"/>
+            <circle cx="320" cy="380" r="12" fill="rgba(184,163,105,0.8)" class="node node-pulse-delay"/>
+        </svg>
     </section>
 
     <!-- Expertise -->

@@ -404,20 +404,39 @@ a {
     100% { transform: translateX(100%); }
 }
 
-/* Network lines decoration */
-.ai-network {
+/* Neural Network SVG */
+.neural-network {
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 450px;
     pointer-events: none;
-    opacity: 0.3;
+    opacity: 0.85;
 }
 
-.ai-network svg {
-    width: 100%;
-    height: 100%;
+.neural-network .node {
+    transition: all 0.3s ease;
+}
+
+.neural-network .node-pulse {
+    animation: node-glow 3s ease-in-out infinite;
+}
+
+.neural-network .node-pulse-delay {
+    animation: node-glow 3s ease-in-out infinite 1.5s;
+}
+
+@keyframes node-glow {
+    0%, 100% {
+        filter: drop-shadow(0 0 2px rgba(184, 163, 105, 0.3));
+        opacity: 0.6;
+    }
+    50% {
+        filter: drop-shadow(0 0 8px rgba(184, 163, 105, 0.8));
+        opacity: 1;
+    }
 }
 
 .ai-content {
@@ -903,6 +922,13 @@ a {
     .expertise-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .neural-network {
+        width: 280px;
+        height: 360px;
+        right: 2%;
+        opacity: 0.6;
+    }
 }
 
 @media (max-width: 768px) {
@@ -925,6 +951,10 @@ a {
 
     .container {
         padding: 0 var(--spacing-md);
+    }
+
+    .neural-network {
+        display: none;
     }
 }
 
