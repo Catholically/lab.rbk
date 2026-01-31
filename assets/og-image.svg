@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0a0a0a"/>
+
+  <!-- Subtle gold accent line -->
+  <rect x="0" y="0" width="4" height="630" fill="#b8a369"/>
+
+  <!-- RBK stylized bars logo -->
+  <rect x="80" y="265" width="8" height="100" fill="#b8a369"/>
+  <rect x="98" y="265" width="8" height="100" fill="#b8a369" opacity="0.7"/>
+  <rect x="116" y="265" width="8" height="100" fill="#b8a369" opacity="0.4"/>
+
+  <!-- Text -->
+  <text x="160" y="320" font-family="Georgia, serif" font-size="48" font-weight="400" fill="#f5f5f5">RBK</text>
+  <text x="265" y="320" font-family="Arial, sans-serif" font-size="48" font-weight="300" fill="#b8a369">studio</text>
+
+  <!-- Tagline -->
+  <text x="160" y="370" font-family="Arial, sans-serif" font-size="22" font-weight="300" fill="#888888">E-commerce Excellence for Exceptional Brands</text>
+</svg>
